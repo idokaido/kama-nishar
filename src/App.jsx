@@ -658,7 +658,7 @@ function Dashboard() {
         padding: "0 16px", paddingBottom: 82
       }}>
         <header style={{
-          textAlign: "center", padding: "20px 0 8px",
+          textAlign: "center", padding: "60px 0 8px",
           position: "relative", maxWidth: 500, margin: "0 auto"
         }}>
           <button onClick={() => setModal("about")} style={{
@@ -676,11 +676,12 @@ function Dashboard() {
           </button>
 
           <div style={{
+            position: "absolute", top: 18, right: 6,
             display: "inline-flex", alignItems: "center", gap: 5,
             background: C.card, backdropFilter: "blur(12px)",
-            borderRadius: 16, padding: "5px 16px", marginBottom: 8,
-            fontSize: 13, color: C.sub, fontWeight: 600,
-            border: "1px solid " + C.border
+            borderRadius: 8, padding: "6px 12px",
+            fontSize: 12, color: C.sub, fontWeight: 600,
+            border: "1px solid " + C.border, minHeight: 36
           }}>
             <span style={{
               width: 7, height: 7, borderRadius: "50%",
@@ -688,7 +689,7 @@ function Dashboard() {
               animation: "pulse 1.5s infinite",
               display: "inline-block"
             }} />
-            מבצע שאגת הארי · {todayDate}
+            שאגת הארי · {todayDate}
           </div>
 
           <div style={{
