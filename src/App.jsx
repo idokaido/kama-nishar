@@ -574,7 +574,7 @@ function Dashboard() {
     };
   }, []);
 
-  useEffect(() => { document.title = "כמה נשאר"; }, []);
+  useEffect(() => { document.title = "כמה נשאר?"; }, []);
 
   if (loading) return (
     <div dir="rtl" style={{
